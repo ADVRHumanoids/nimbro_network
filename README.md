@@ -88,6 +88,16 @@ Getting started
 See nimbro_topic_transport/README.md and nimbro_service_transport/README.md
 for documentation on the topic and service transport.
 
+Dependencies
+------------
+
+On Ubuntu 16.04 (ROS kinetic):
+
+```
+sudo apt-get install ros-kinetic-catch-ros
+sudo apt-get install libzstd1-dev
+```
+
 State
 -----
 
