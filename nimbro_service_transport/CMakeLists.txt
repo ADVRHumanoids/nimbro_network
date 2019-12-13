@@ -121,3 +121,7 @@ install(TARGETS service_server service_client udp_server udp_client service_widg
 	LIBRARY DESTINATION ${CATKIN_PACKAGE_LIB_DESTINATION}
 	RUNTIME DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
 )
+
+install(PROGRAMS scripts/get_md5.py 
+        DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}/scripts
+)
