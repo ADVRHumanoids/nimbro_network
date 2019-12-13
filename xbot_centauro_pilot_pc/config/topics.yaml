@@ -1,4 +1,9 @@
 udp_topics:
+
+- name: "/xbotcore/command"
+  compress: true 
+  rate: 100.0
+  
 - name: "/cartesian/pelvis/velocity_reference"
   compress: true 
   rate: 30.0

@@ -1,15 +1,10 @@
 udp_topics:
- - name: "/cartesian/pelvis/velocity_reference"
-   compress: true 
-   rate: 30.0
+- name: "/xbotcore/joint_states"
+  compress: true 
+  rate: 10.0
    
- - name: "/cartesian/arm1_8/velocity_reference"
-   compress: true 
-   rate: 30.0
-   
-- name: "/cartesian/arm2_8/velocity_reference"
-   compress: true 
-   rate: 30.0
+- name: "/xbotcore/statistics"
+  compress: true 
+  rate: 5.0
 
-tcp_topics:
- #- name: "/tcp_topic"
+#tcp_topics:
