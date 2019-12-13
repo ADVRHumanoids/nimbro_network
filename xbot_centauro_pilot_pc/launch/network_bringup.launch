@@ -13,6 +13,7 @@
         <!-- The UDP topic recv node -->
         <node name="topic_receiver" pkg="nimbro_topic_transport" type="receiver" output="screen">
             <param name="port" value="$(arg local_topic_port)" />
+            <remap from="/tf_throttle/tf" to="/tf" />
         </node>
         
         <!-- The UDP topic send node -->

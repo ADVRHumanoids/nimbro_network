@@ -6,5 +6,8 @@ udp_topics:
 - name: "/xbotcore/statistics"
   compress: true 
   rate: 5.0
+  
+- name: "/tf_throttle/tf"
+  compress: true
 
 #tcp_topics:
