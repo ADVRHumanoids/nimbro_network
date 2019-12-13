@@ -17,4 +17,19 @@ services:
 - name: /xbotcore/Parking_Steering_status
   type: xbot_msgs/PluginStatus  
   
+- name: /cartesian/get_task_list
+  type: cartesian_interface/GetTaskList
+  
+- name: /cartesian/pelvis/set_task_properties
+  type: cartesian_interface/SetTaskInfo
+  
+- name: /cartesian/arm2_8/set_task_properties
+  type: cartesian_interface/SetTaskInfo
+  
+- name: /cartesian/arm1_8/set_task_properties
+  type: cartesian_interface/SetTaskInfo 
+  
+- name: /cartesian/load_controller
+  type: cartesian_interface/LoadController 
+  
  
