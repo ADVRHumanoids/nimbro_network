@@ -10,6 +10,10 @@ udp_topics:
 - name: "/tf_throttle/tf"
   compress: true
   
+- name: "/tf_static"
+  compress: true  
+  rate: 1.0
+  
 - name: "/cartesian/pelvis/state"
   compress: true  
   rate: 10.0
