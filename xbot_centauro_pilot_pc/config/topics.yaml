@@ -1,15 +1,14 @@
 udp_topics:
- - name: "/cartesian/pelvis/velocity_reference"
-   compress: true 
-   rate: 30.0
+- name: "/cartesian/pelvis/velocity_reference"
+  compress: true 
+  rate: 30.0
    
- - name: "/cartesian/arm1_8/velocity_reference"
-   compress: true 
-   rate: 30.0
+- name: "/cartesian/arm1_8/velocity_reference"
+  compress: true 
+  rate: 30.0
    
 - name: "/cartesian/arm2_8/velocity_reference"
-   compress: true 
-   rate: 30.0
+  compress: true 
+  rate: 30.0
 
-tcp_topics:
- #- name: "/tcp_topic"
+#tcp_topics:
