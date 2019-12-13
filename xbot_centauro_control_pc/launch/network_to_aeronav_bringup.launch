@@ -3,14 +3,16 @@
     
         <arg name="target_topic_addr" default="10.24.4.87" />
         <arg name="target_topic_port" default="17001" />
+        <arg name="local_topic_port" default="17002" />
         
         
-        <arg name="target_service_addr" default="10.24.4.87" />
-        <arg name="target_service_port" default="6000" />
+<!--        <arg name="target_service_addr" default="10.24.4.87" />
+        <arg name="target_service_port" default="6000" />-->
         <arg name="local_service_port" default="6001" />
 
         <!-- The UDP topic recv node -->
         <node name="topic_receiver" pkg="nimbro_topic_transport" type="receiver" output="screen">
+            <param name="port" value="$(arg local_topic_port)" />
         </node>
         
         <!-- The UDP topic send node -->
@@ -29,12 +31,11 @@
                 <param name="port" value="$(arg local_service_port)" />
         </node>
 
-        <node name="service_udp_client" pkg="nimbro_service_transport" type="service_client" output="screen">
+<!--        <node name="service_tcp_client" pkg="nimbro_service_transport" type="service_client" output="screen">
                 <param name="server" value="$(arg target_service_addr)" />
                 <param name="port" value="$(arg target_service_port)" />
                 
-                <!-- Load the list of service from a YAML file -->
                 <rosparam command="load" file="$(find xbot_centauro_control_pc)/config/services.yaml" />
-        </node>
+        </node>-->
         
 </launch>
