@@ -8,7 +8,7 @@
         
         <arg name="target_service_addr" default="10.24.4.102" />
         <arg name="target_service_port" default="6000" />
-        <arg name="local_service_port" default="6000" />
+<!--         <arg name="local_service_port" default="6000" /> -->
 
         <!-- The UDP topic recv node -->
         <node name="topic_receiver" pkg="nimbro_topic_transport" type="receiver" output="screen">
@@ -27,9 +27,9 @@
         </node>
         
         
-        <node name="service_tcp_server" pkg="nimbro_service_transport" type="service_server" output="screen">
+<!--        <node name="service_tcp_server" pkg="nimbro_service_transport" type="service_server" output="screen">
                 <param name="port" value="$(arg local_service_port)" />
-        </node>
+        </node>-->
 
         <node name="service_tcp_client" pkg="nimbro_service_transport" type="service_client" output="screen">
                 <param name="server" value="$(arg target_service_addr)" />

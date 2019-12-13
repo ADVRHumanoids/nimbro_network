@@ -11,12 +11,12 @@
         <arg name="local_service_port" default="6001" />
 
         <!-- The UDP topic recv node -->
-        <node name="topic_receiver" pkg="nimbro_topic_transport" type="receiver" output="screen">
+        <node name="topic_receiver_from_aeronav" pkg="nimbro_topic_transport" type="receiver" output="screen">
             <param name="port" value="$(arg local_topic_port)" />
         </node>
         
         <!-- The UDP topic send node -->
-        <node name="topic_sender" pkg="nimbro_topic_transport" type="sender" output="screen">
+        <node name="topic_sender_to_aeronav" pkg="nimbro_topic_transport" type="sender" output="screen">
 
                 <!-- The destination host name or IP address -->
                 <param name="destination_addr" value="$(arg target_topic_addr)" />
@@ -27,7 +27,7 @@
         </node>
         
         
-        <node name="service_tcp_server" pkg="nimbro_service_transport" type="service_server" output="screen">
+        <node name="service_tcp_server_aeronav" pkg="nimbro_service_transport" type="service_server" output="screen">
                 <param name="port" value="$(arg local_service_port)" />
         </node>
 
