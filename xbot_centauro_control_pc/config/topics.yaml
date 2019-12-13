@@ -12,7 +12,7 @@ udp_topics:
   
 - name: "/tf_static"
   compress: true  
-  rate: 5.0
+  rate: 100.0
   
 - name: "/cartesian/pelvis/state"
   compress: true  
