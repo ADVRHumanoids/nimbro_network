@@ -20,14 +20,57 @@ services:
 - name: /cartesian/get_task_list
   type: cartesian_interface/GetTaskList
   
+  
 - name: /cartesian/pelvis/set_task_properties
   type: cartesian_interface/SetTaskInfo
+  
+- name: /cartesian/arm1_8/set_task_properties
+  type: cartesian_interface/SetTaskInfo   
   
 - name: /cartesian/arm2_8/set_task_properties
   type: cartesian_interface/SetTaskInfo
   
-- name: /cartesian/arm1_8/set_task_properties
+- name: /cartesian/wheel_1/set_task_properties
+  type: cartesian_interface/SetTaskInfo
+  
+- name: /cartesian/wheel_2/set_task_properties
+  type: cartesian_interface/SetTaskInfo   
+  
+- name: /cartesian/wheel_3/set_task_properties
+  type: cartesian_interface/SetTaskInfo  
+  
+- name: /cartesian/wheel_4/set_task_properties
+  type: cartesian_interface/SetTaskInfo  
+ 
+- name: /cartesian/com/set_task_properties
   type: cartesian_interface/SetTaskInfo 
+
+  
+  
+- name: /cartesian/pelvis/get_task_properties
+  type: cartesian_interface/GetTaskInfo
+  
+- name: /cartesian/arm1_8/get_task_properties
+  type: cartesian_interface/GetTaskInfo     
+  
+- name: /cartesian/arm2_8/get_task_properties
+  type: cartesian_interface/GetTaskInfo 
+  
+- name: /cartesian/wheel_1/get_task_properties
+  type: cartesian_interface/GetTaskInfo
+  
+- name: /cartesian/wheel_2/get_task_properties
+  type: cartesian_interface/GetTaskInfo   
+  
+- name: /cartesian/wheel_3/get_task_properties
+  type: cartesian_interface/GetTaskInfo  
+  
+- name: /cartesian/wheel_4/get_task_properties
+  type: cartesian_interface/GetTaskInfo  
+  
+- name: /cartesian/com/get_task_properties
+  type: cartesian_interface/GetTaskInfo    
+
   
 - name: /cartesian/load_controller
   type: cartesian_interface/LoadController 
