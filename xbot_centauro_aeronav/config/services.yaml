@@ -1,0 +1,20 @@
+services:
+- name: /xbotcore/HomingExample_switch
+  type: std_srvs/SetBool
+   
+- name: /xbotcore/XBotCommunicationPlugin_switch
+  type: std_srvs/SetBool
+   
+- name: /xbotcore/Parking_Steering_switch
+  type: std_srvs/SetBool
+  
+- name: /xbotcore/HomingExample_status
+  type: xbot_msgs/PluginStatus
+   
+- name: /xbotcore/XBotCommunicationPlugin_status
+  type: xbot_msgs/PluginStatus
+   
+- name: /xbotcore/Parking_Steering_status
+  type: xbot_msgs/PluginStatus  
+  
+ 

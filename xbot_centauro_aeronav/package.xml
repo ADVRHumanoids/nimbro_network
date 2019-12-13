@@ -1,0 +1,12 @@
+<package format="2">
+	<name>xbot_centauro_aeronav</name>
+	<version>1.0.0</version>
+	<description>Contains nodes for TCP/UDP communication between ROS masters</description>
+
+	<maintainer email="max.schwarz@uni-bonn.de">Max Schwarz</maintainer>
+
+	<license>GPLv2</license>
+
+	<buildtool_depend>catkin</buildtool_depend>
+
+</package>

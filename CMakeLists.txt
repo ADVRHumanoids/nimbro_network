@@ -1,3 +1,7 @@
 add_subdirectory(nimbro_topic_transport)
 add_subdirectory(nimbro_service_transport)
 add_subdirectory(nimbro_tf_throttle)
+
+add_subdirectory(xbot_centauro_pilot_pc)
+add_subdirectory(xbot_centauro_control_pc)
+add_subdirectory(xbot_centauro_aeronav)
