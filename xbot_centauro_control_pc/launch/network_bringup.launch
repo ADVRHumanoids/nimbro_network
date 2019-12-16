@@ -1,8 +1,15 @@
 <?xml version="1" ?>
 <launch>
     <include file="$(find xbot_centauro_control_pc)/launch/network_to_pilot_bringup.launch"/>
+    
     <include file="$(find xbot_centauro_control_pc)/launch/network_to_aeronav_bringup.launch"/>
+    
     <node name="tf_throttle" pkg="nimbro_tf_throttle" type="tf_throttle" output="screen">
         <param name="rate" value="50.0"/>
     </node>
+    
+    <node name="zed_cam_sender" pkg="nimbro_cam_transport" type="cam_sender" output="screen">
+        <remap from="~image" to="/zed/rgb/raw_color_image"/>
+    </node>
+    
 </launch>
