@@ -43,4 +43,14 @@ udp_topics:
   compress: true  
   rate: 50.0    
 
-#tcp_topics:
+#- name: "/zed/rgb/image_raw_color"
+#  compress: true
+#  rate: 1.0
+
+- name: "/zed_cam_sender/encoded"
+
+
+
+ #tcp_topics:
+
+
