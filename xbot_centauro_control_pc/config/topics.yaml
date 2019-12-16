@@ -9,6 +9,7 @@ udp_topics:
   
 - name: "/tf_throttle/tf"
   compress: true
+  rate: 50.0
   
 - name: "/tf_static"
   compress: true  

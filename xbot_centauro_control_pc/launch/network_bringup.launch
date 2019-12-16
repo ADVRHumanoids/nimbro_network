@@ -3,6 +3,6 @@
     <include file="$(find xbot_centauro_control_pc)/launch/network_to_pilot_bringup.launch"/>
     <include file="$(find xbot_centauro_control_pc)/launch/network_to_aeronav_bringup.launch"/>
     <node name="tf_throttle" pkg="nimbro_tf_throttle" type="tf_throttle" output="screen">
-        <param name="rate" value="5.0"/>
+        <param name="rate" value="50.0"/>
     </node>
 </launch>
