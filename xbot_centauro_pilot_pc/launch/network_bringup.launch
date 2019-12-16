@@ -26,11 +26,6 @@
                 <!-- Load the list of topics from a YAML file -->
                 <rosparam command="load" file="$(find xbot_centauro_pilot_pc)/config/topics.yaml" />
         </node>
-        
-        
-<!--        <node name="service_tcp_server" pkg="nimbro_service_transport" type="service_server" output="screen">
-                <param name="port" value="$(arg local_service_port)" />
-        </node>-->
 
         <node name="service_tcp_client" pkg="nimbro_service_transport" type="service_client" output="screen">
                 <param name="server" value="$(arg target_service_addr)" />
@@ -38,6 +33,10 @@
                 
                 <!-- Load the list of service from a YAML file -->
                 <rosparam command="load" file="$(find xbot_centauro_pilot_pc)/config/services.yaml" />
+        </node>
+        
+        <node name="zed_cam_receiver" pkg="nimbro_cam_transport" type="cam_receiver" output="screen">
+            <remap from="~encoded" to="/zed_cam_sender/encoded"/>
         </node>
         
 </launch>
