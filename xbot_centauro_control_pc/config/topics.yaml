@@ -1,7 +1,7 @@
 udp_topics:
 - name: "/xbotcore/joint_states"
   compress: true 
-  rate: 10.0
+  rate: 100.0
    
 - name: "/xbotcore/statistics"
   compress: true 
@@ -9,42 +9,38 @@ udp_topics:
   
 - name: "/tf_throttle/tf"
   compress: true
-  rate: 50.0
-  
-- name: "/tf_static"
-  compress: true  
-  rate: 100.0
-  
+  rate: 30.0
+   
 - name: "/cartesian/pelvis/state"
   compress: true  
-  rate: 10.0
+  rate: 50.0
   
 - name: "/cartesian/com/state"
   compress: true  
-  rate: 10.0
+  rate: 50.0
   
 - name: "/cartesian/arm1_8/state"
   compress: true  
-  rate: 10.0
+  rate: 50.0
   
 - name: "/cartesian/arm2_8/state"
   compress: true  
-  rate: 10.0
+  rate: 50.0
   
 - name: "/cartesian/wheel_1/state"
   compress: true  
-  rate: 10.0
+  rate: 50.0
   
 - name: "/cartesian/wheel_2/state"
   compress: true  
-  rate: 10.0
+  rate: 50.0
   
 - name: "/cartesian/wheel_3/state"
   compress: true  
-  rate: 10.0  
+  rate: 50.0  
 
 - name: "/cartesian/wheel_4/state"
   compress: true  
-  rate: 10.0    
+  rate: 50.0    
 
 #tcp_topics:
