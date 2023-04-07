@@ -80,8 +80,8 @@ int main(int argc, char** argv)
 
 	g_codec = avcodec_alloc_context3(decoder);
 
-	g_codec->flags |= CODEC_FLAG_LOW_DELAY;
-	g_codec->flags2 |= CODEC_FLAG2_SHOW_ALL;
+	g_codec->flags |= AV_CODEC_FLAG_LOW_DELAY;
+	g_codec->flags2 |= AV_CODEC_FLAG2_SHOW_ALL;
 
 	g_codec->thread_type = 0;
 
